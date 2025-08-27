@@ -3,6 +3,7 @@ package com.devctr.call_panel.model.entity;
 import java.util.Date;
 
 import com.devctr.call_panel.model.dto.CallDTO;
+import com.devctr.call_panel.model.enums.CallStatus;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,7 +22,7 @@ public class Call {
 
     private String name;
     private String counter;
-    private String status;
+    private CallStatus status;
     private Date creationDate;
 
     public Call(CallDTO callDTO) {

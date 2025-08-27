@@ -1,5 +1,7 @@
 package com.devctr.call_panel.model.dto;
 
+import com.devctr.call_panel.model.enums.CallStatus;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,5 +10,5 @@ import lombok.Setter;
 public class CallDTO {
     private String name;
     private String counter;
-    private String status;
+    private CallStatus status;
 }
