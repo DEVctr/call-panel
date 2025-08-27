@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Painel de Chamadas </title>
+</head>
+<body>
+    <div class="container">
+        <h1> Painel de Chamadas </h1>
+        <div class="content">
+            <div id="main"> Nenhuma chamada no momento </div>
+            
+            <div id="history"></div>
+        </div>
+
+        <div class="infos">
+            <span> Razão social® - ANO</span>
+            <div class="status">
+                <div class="status-indicator" id="connection-status"></div>
+                <span id="status-text"> Conectando... </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+</body>
+<script src="script.js"></script>
+</html>
