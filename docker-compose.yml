@@ -12,7 +12,9 @@ services:
             - postgres_data:/var/lib/postgresql/data
 
     springboot:
-        build: .
+        build:
+            context: .
+            dockerfile: Dockerfile
         container_name: call_panel_app
         ports:
             - "8080:8080"
@@ -20,8 +22,6 @@ services:
             SPRING_PROFILES_ACTIVE: prod
         depends_on:
             - postgres
-        volumes:
-            - ./target/call-panel.jar:/app/call-panel.jar
 
 volumes:
     postgres_data:
