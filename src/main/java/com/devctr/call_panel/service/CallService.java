@@ -9,6 +9,7 @@ import com.devctr.call_panel.repository.CallRepositoy;
 @Service
 public class CallService {
     private final CallRepositoy callRepository;
+    public int count = 0;
 
     public CallService(CallRepositoy callRepository) {
         this.callRepository = callRepository;
